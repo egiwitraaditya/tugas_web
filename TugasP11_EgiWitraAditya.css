@@ -1,0 +1,225 @@
+/* === RESET DASAR & BODY === */
+body {
+  font-family: 'Poppins', sans-serif; /* Font modern yang cocok */
+  margin: 0;
+  background-color: #F4F9FF; /* Latar belakang biru sangat muda */
+  color: #4A4A4A; /* Warna teks paragraf (abu-abu gelap) */
+}
+
+/* === GAYA NAVBAR (Tema Biru Derawan) === */
+.navbar-traveloka {
+  background-color: #ffffff;
+  border-bottom: 1px solid #DDEEFF; /* Border biru muda */
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #005A9C; /* Biru Primer */
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #E6F7FF; /* Latar hover biru muda */
+  color: #005A9C; /* Biru Primer */
+}
+
+.nav-links a.active {
+  color: #005A9C; /* Biru Primer */
+  font-weight: bold;
+  /* Mengganti latar agar lebih mirip tab */
+  background-color: transparent;
+  border-bottom: 2px solid #005A9C;
+  border-radius: 0; /* Menghapus radius agar jadi garis */
+  padding-bottom: 8px;
+}
+
+/* === Tombol Opsional (jika Anda pakai lagi) === */
+.nav-auth a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-auth .btn-login {
+  color: #005A9C; /* Biru Primer */
+  border: 1px solid #005A9C;
+}
+
+.nav-auth .btn-login:hover {
+  background-color: #E6F7FF; /* Latar hover biru muda */
+}
+
+.nav-auth .btn-register {
+  background-color: #005A9C; /* Biru Primer */
+  color: white;
+  border: 1px solid #005A9C;
+}
+
+.nav-auth .btn-register:hover {
+  background-color: #004070; /* Biru lebih gelap */
+}
+
+/* === KONTEN UTAMA & CONTAINER === */
+.container {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+/* === HERO SECTION (Gaya Derawan) === */
+.main-content .hero {
+  text-align: center;
+  padding: 50px 40px; /* Padding lebih besar */
+  background-color: #005A9C; /* Latar Biru Primer */
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0, 90, 156, 0.2); /* Bayangan biru */
+}
+
+.main-content .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Teks tebal seperti di gambar */
+    font-size: 3.2rem; 
+    color: #FFFFFF; /* Teks Putih */
+    margin-bottom: 15px;
+}
+
+.main-content .hero p {
+    font-size: 1.1rem; 
+    color: #E6F7FF; /* Teks putih kebiruan */
+    line-height: 1.6;
+}
+
+
+/* === GAYA KONTEN GRID === */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* === GAYA CARD === */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #DDEEFF; /* Border biru muda */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 90, 156, 0.1); /* Bayangan biru saat hover */
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: #0B4C7B; /* Teks judul biru gelap */
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #4A4A4A; /* Teks paragraf abu-abu gelap */
+  line-height: 1.7;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  background-color: #0B4C7B; /* Footer biru gelap */
+  color: #E6F7FF; /* Teks footer biru muda */
+  border-top: 1px solid #005A9C; /* Border pemisah */
+}
+
+/* ================================================
+   GAYA FORMULIR KONTAK 
+  ================================================
+*/
+form label {
+  display: block;
+  margin-top: 18px;
+  text-align: left;
+  font-weight: bold;
+  color: #0B4C7B; /* Label form biru gelap */
+  font-size: 1.1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #A8D8FF; /* Border input biru muda */
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #FFFFFF;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button[type="submit"] {
+  background-color: #005A9C; /* Tombol Biru Primer */
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #004070; /* Biru lebih gelap saat hover */
+}
